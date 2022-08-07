@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     InputLabel: {
-        fontSize: 18,
+        fontSize: 16,
     },
     signUpText: {
         marginBottom: 100,
@@ -90,8 +90,6 @@ const styles = StyleSheet.create({
     },
     linkText: {
         color: color.blueColor,
-        textDecorationStyle: 'solid',      
-        borderBottomWidth: 1,  
     }
 })
 
