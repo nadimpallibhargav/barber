@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, TouchableHighlight, TextInput } from 'react-native';
+import { View, StyleSheet, Text, TouchableOpacity, TouchableHighlight, TextInput, Button } from 'react-native';
 import color from '../config/colors';
 
 function LoginPage() {
@@ -30,6 +30,12 @@ function LoginPage() {
             <TouchableOpacity style={styles.Btn}>
                 <Text style={styles.BtnText}>Log In</Text>
             </TouchableOpacity>
+            <Button
+                onPress={() =>{
+                    naviagtion.naviagte('Entry')
+                }}> 
+                Back
+            </Button>
         </View>
     );
 }
