@@ -4,8 +4,8 @@ import color from '../config/colors';
 
 function LoginPage() {
 
-    const [UserName, setUserName] = React.useState("");
-    const [Password, setPassword] = React.useState("");
+    const [UserName, setUserName] = useState("");
+    const [Password, setPassword] = useState("");
 
     return (
         <View style={styles.container}>

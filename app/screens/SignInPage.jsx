@@ -15,7 +15,7 @@ export const SignInPage = () =>{
            color :'#141414'
         }
       })
-      
+
     return(
         <>
          <View style={styles.container} >
@@ -30,6 +30,5 @@ export const SignInPage = () =>{
             </Button>
          </View>
         </>
-    )
- 
+    ) 
 }
