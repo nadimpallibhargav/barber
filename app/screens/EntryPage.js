@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
+import { View, StyleSheet, Text, Button, Image } from 'react-native';
 import color from '../config/colors';
 
 function EntryPage() {
@@ -10,12 +10,18 @@ function EntryPage() {
             <Text style={styles.Heading}>Welocome !</Text>
             <Text style={styles.Heading}>CUT TIME before HAIR</Text>
         </View>
-        <TouchableOpacity style={styles.Btn}>
+        <Button 
+                 onPress={() =>
+                 navigation.navigate('Login')}
+                 style={styles.Btn}>
             <Text style={styles.BtnText}>Log In</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={[styles.Btn, styles.SignUp]}>
+        </Button>
+        <Button 
+                onPress={() =>{
+                navigation.navigate('SignIn')}}
+                style={[styles.Btn, styles.SignUp]}>
             <Text style={styles.BtnText}>Sign Up</Text>
-        </TouchableOpacity>
+        </Button>
     </View>
   );
 }
